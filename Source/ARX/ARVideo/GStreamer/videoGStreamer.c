@@ -90,8 +90,6 @@ typedef gboolean arx_GstPadProbeReturn;
 static arx_GstPadProbeReturn cb_have_data(GstPad *pad, GstPadProbeInfo *info, gpointer u_data)
 {
 	GstBuffer *buffer = GST_PAD_PROBE_INFO_BUFFER (info);
-	const GstCaps *caps;
-	GstStructure *str;
 	
 	gint width,height;
 	gdouble rate;
